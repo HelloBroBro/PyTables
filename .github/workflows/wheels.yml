@@ -95,13 +95,13 @@ jobs:
           # The aarch64 wheels are very slow so split into separate jobs
           - os: ubuntu-latest
             arch: aarch64
-            build: 'cp310-*'
-          - os: ubuntu-latest
-            arch: aarch64
             build: 'cp311-*'
           - os: ubuntu-latest
             arch: aarch64
             build: 'cp312-*'
+          - os: ubuntu-latest
+            arch: aarch64
+            build: 'cp313-*'
 
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
